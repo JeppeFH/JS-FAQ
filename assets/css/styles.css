@@ -12,7 +12,79 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
 /*Section [FAQ]*/
+.faq {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin-top: 20px;
+  margin: 0 auto;
+  background-color: tomato;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+.faq-container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5px 5px 5px;
+}
+
+.faq-container article {
+  margin: 10px 5px 5px 5px;
+
+  display: none;
+  line-height: 1.6;
+  transition: all 150ms ease-in-out;
+}
+
+.faq-container.active article {
+  display: block;
+  transition: all 250ms ease-in-out;
+  animation: fade 500ms ease-in-out;
+}
+
+.faq-container.active i {
+  transform: rotate(180deg);
+}
+
+.faq-container i {
+  font-size: 1.8rem;
+  transition: transform 250ms ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /*Responsive*/
 @media screen and (max-width: 768px) {
