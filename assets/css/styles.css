@@ -62,7 +62,7 @@ p {
 .faq-container.active article {
   display: block;
   transition: all 250ms ease-in-out;
-  animation: fade 500ms ease-in-out;
+  animation: faq-article-fade 500ms ease-in-out;
 }
 
 .faq-container.active i {
@@ -74,7 +74,7 @@ p {
   transition: transform 250ms ease-in;
 }
 
-@keyframes fade {
+@keyframes faq-article-fade {
   from {
     opacity: 0;
     transform: translateY(-10px);
